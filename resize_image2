@@ -1,6 +1,5 @@
 import cv2
 import matplotlib.pyplot as plt
-
 image = cv2.imread(r"C:\Users\sohad\OneDrive\Desktop\Python\BacBon\room.jpg", 1)
 # Loading the image
 
@@ -9,7 +8,6 @@ bigger = cv2.resize(image, (1000, 1500))
 
 stretch_near = cv2.resize(image, (780, 540), 
                interpolation = cv2.INTER_LINEAR)
-
 
 Titles =["Original", "Half", "Bigger", "Interpolation Nearest"]
 images =[image, half, bigger, stretch_near]
