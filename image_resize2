@@ -1,0 +1,10 @@
+from PIL import Image
+
+# Load the image
+picture = Image.open("C:/Users/sohad/OneDrive/Desktop/Python/BacBon/room.jpg")
+
+# Resize the image to 1000x1000 pixels
+new_image = picture.resize((1000, 1000))
+
+# Save the resized image
+new_image.save("C:/Users/sohad/OneDrive/Desktop/Python/BacBon/New_image_of_room.jpg")
