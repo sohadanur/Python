@@ -1,0 +1,17 @@
+#Image is resized and and then the image is scaled to avoid distortion of images.
+import cv2
+#Library used
+import matplotlib.pyplot as plt
+#read image
+image=cv2.imread(r"C:\Users\sohad\OneDrive\Desktop\Python\BacBon\71DyiJd43kL._AC_SX679_.jpg")
+#Reading the original image dimensions
+print('Image Width is',image.shape[1])
+print('Image Height is',image.shape[0])
+#Function created to resize the image
+resized_img= cv2.resize(image, (500,500))
+print("the resized W & height is: ", resized_img.shape[1], resized_img.shape[0])
+#function to scale the original image
+img_75=cv2.resize(image, None, fx=0.50,fy=0.50)
+print("New width of the image: ", img_75.shape[1])
+print("New height of the image: ", img_75.shape[0])
+##If we want to scale the resized image then we just need to put this line: img_75=cv2.resize(resized_img, None, fx=0.50,fy=0.50)
