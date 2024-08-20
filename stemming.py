@@ -1,3 +1,4 @@
+#MULTIPLES ALGORITHMS FOR STEMMING IS USED HERE. 
 # import these modules
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize #for tokenization 
